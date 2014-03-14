@@ -1,4 +1,0 @@
-LearningCM
-==========
-
-Learning Caliburn Micro

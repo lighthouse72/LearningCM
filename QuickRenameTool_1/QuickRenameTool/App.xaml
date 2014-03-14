@@ -1,0 +1,17 @@
+﻿<Application x:Class="QuickRenameTool.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:Shell="clr-namespace:QuickRenameTool.Shell"
+             >
+    <Application.Resources>
+        <!-- Needs to be nested this way, other wise it will not work -->
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary>
+                    <Shell:Bootstrapper x:Key="bootstrapper" />
+                </ResourceDictionary>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+        
+    </Application.Resources>
+</Application>
