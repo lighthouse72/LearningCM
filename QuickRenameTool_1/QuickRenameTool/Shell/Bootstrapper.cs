@@ -1,6 +1,5 @@
 ﻿namespace QuickRenameTool.Shell
 {
-    using Caliburn.Micro;
     using System;
     using System.Collections.Generic;
     using System.ComponentModel.Composition;
@@ -8,6 +7,7 @@
     using System.ComponentModel.Composition.Primitives;
     using System.Linq;
     using System.Windows;
+    using Caliburn.Micro;
 
     public class Bootstrapper : BootstrapperBase
     {
@@ -72,10 +72,6 @@
 
         private static void AddCustomConventions()
         {
-            //ConventionManager.AddElementConvention<PropertyTools.Wpf.DirectoryPicker>
-            //    (PropertyTools.Wpf.DirectoryPicker.DirectoryProperty, "Directory", "DataContextChanged");
-            //ConventionManager.AddElementConvention<PropertyTools.Wpf.DirectoryPicker>
-            //    (PropertyTools.Wpf.DirectoryPicker.DirectoryProperty, "Directory", "TextChanged");
             ConventionManager.AddElementConvention<PropertyTools.Wpf.DirectoryPicker>
                 (PropertyTools.Wpf.DirectoryPicker.DirectoryProperty, "Directory", "DataContextChanged")
                 .ApplyBinding = (viewModelType, path, property, element, convention) =>

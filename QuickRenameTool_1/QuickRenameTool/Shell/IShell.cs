@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace QuickRenameTool.Shell
+﻿namespace QuickRenameTool.Shell
 {
-    public interface IShell
-    {
-    }
+    public interface IShell { }
 }

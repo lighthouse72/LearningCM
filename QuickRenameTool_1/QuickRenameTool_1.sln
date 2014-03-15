@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickRenameTool", "QuickRenameTool\QuickRenameTool.csproj", "{7724198D-7176-49A9-A2D5-51B5694DE8EB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickRenameTool_1", "QuickRenameTool\QuickRenameTool_1.csproj", "{7724198D-7176-49A9-A2D5-51B5694DE8EB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

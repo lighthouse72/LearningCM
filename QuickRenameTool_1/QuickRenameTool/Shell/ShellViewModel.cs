@@ -1,12 +1,7 @@
-﻿/// Note: NuGet:
-///             - Caliburn.Micro version: 1.5.2
-///             - PropertyTools.Wpf version: 2014.1.13.1
-
-namespace QuickRenameTool.Shell
+﻿namespace QuickRenameTool.Shell
 {
-    using Caliburn.Micro;
     using System.ComponentModel.Composition;
-    using System.Windows;
+    using Caliburn.Micro;
 
     [Export(typeof(IShell))]
     public class ShellViewModel : PropertyChangedBase, IShell
@@ -80,7 +75,7 @@ namespace QuickRenameTool.Shell
 
         private string _targetDirectory = string.Empty;
         /// <summary>
-        /// Is is the directory we us to move the files to.
+        /// Is the directory we us to move the files to.
         /// </summary>
         /// <remarks>
         /// If we do not want to rename the file use the same extensions in
@@ -112,7 +107,7 @@ namespace QuickRenameTool.Shell
         public bool Canrun
         {
             /// To be able to move files we need:
-            /// - an status that is not canceled
+            /// - an status that is not cancelled
             /// - a working directory, "C:\".Length is three this is why i
             ///     have set 3 as min length.
             get { return _cancel & _workingDirectory.Length > 3; }
