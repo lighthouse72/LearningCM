@@ -1,0 +1,14 @@
+﻿<Window x:Class="RenameTool.Shell.ShellView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:cal="clr-namespace:Caliburn.Micro;assembly=Caliburn.Micro"
+        xmlns:tab="clr-namespace:RenameTool.Modules.Tabs"
+        xmlns:tabCon="clr-namespace:RenameTool.Lib"
+        Height="350" Width="525" ResizeMode="NoResize">
+    <Grid>
+        <DockPanel >
+            <ContentControl x:Name="MenuRegion" DockPanel.Dock="Top" Width="Auto" Height="25" />
+            <ContentControl x:Name="Tabs" />
+        </DockPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,15 @@
+﻿<Window x:Class="TabControlSample.Shell.ShellView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:cal="clr-namespace:Caliburn.Micro;assembly=Caliburn.Micro"
+        xmlns:tabs="clr-namespace:TabControlSample.Tabs"
+        Height="350" Width="525" ResizeMode="NoResize">
+    <Grid>
+        <DockPanel >
+            <Button x:Name="OpenTab" Content="Open new tab" DockPanel.Dock="Top"/>
+            
+            <!-- This is the control that holds the TabsView -->
+            <ContentControl x:Name="Tabs"/>
+        </DockPanel>
+    </Grid>
+</Window>
